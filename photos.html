@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Photography – hj</title>
+  <style>
+    /* Same styling as other pages */
+    body {
+      font-family: sans-serif;
+      max-width: 700px;
+      margin: auto;
+      padding: 2em;
+      line-height: 1.6;
+    }
+    nav {
+      margin-bottom: 2em;
+      border-bottom: 2px solid #007acc;
+      display: flex;
+      gap: 1em;
+    }
+    nav a {
+      padding: 0.5em 1em;
+      text-decoration: none;
+      color: #007acc;
+      border: 2px solid transparent;
+      border-bottom: none;
+      font-weight: bold;
+      transition: border-color 0.3s;
+    }
+    nav a:hover {
+      border-color: #007acc;
+      border-bottom: none;
+    }
+    nav a.active {
+      border-color: #007acc;
+      border-bottom: 2px solid white;
+      color: black;
+      cursor: default;
+    }
+    /* Simple gallery */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+      gap: 1em;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">About Me</a>
+    <a href="blog.html">Blog</a>
+    <a href="photos.html" class="active">Photography</a>
+  </nav>
+
+  <h1>Photography</h1>
+  <p>Here are some of my favorite shots:</p>
+
+  <div class="gallery">
+    <img src="photos/photo1.jpg" alt="Photo 1" />
+    <img src="photos/photo2.jpg" alt="Photo 2" />
+    <img src="photos/photo3.jpg" alt="Photo 3" />
+  </div>
+
+</body>
+</html>
